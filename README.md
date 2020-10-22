@@ -13,6 +13,9 @@
   - [x] 秒数动态
 - [x] GUI完善
 - [ ] 滤波器返回设置
+- [ ] 滤波器设计函数自实现
+  - [x] 巴特沃兹
+  - [x] 窗函数
 
 
 
@@ -98,5 +101,38 @@ end
 
 ```matlab
 
+```
+
+
+
+
+
+
+
+#### IIR巴特沃兹设计
+
+![image-20201022112406242](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201022112406242.png)
+
+
+
+
+
+
+
+#### 确定N
+
+其中
+$$
+WA=\frac{\Omega_p}{\Omega_s}
+$$
+
+
+
+
+```matlab
+% find the minimum order b'worth filter to meet the more demanding spec:
+WA=min(abs(WA));
+order = ceil( log10( (10 .^ (0.1*abs(rs)) - 1)./ ...
+    (10 .^ (0.1*abs(rp)) - 1) ) / (2*log10(WA)) );
 ```
 

@@ -2,7 +2,7 @@ function X = overlapSave(x,h,L,puaseTime)
 %  快速卷积重叠保留法
 %  x: 输入信号
 %  h: 冲积行向量
-%  L: 卷积块大小 不能比x或h长度还小, 否则自动变为他们的长度
+%  L: 卷积块大小 不能比x长度还大, 否则自动变为他的长度
 
 if nargin<4
     puaseTime = 1;
@@ -19,9 +19,11 @@ end
 if ~isrow(h)
     h = h';
 end
-
-if L < length(x) || L < length(h)
-    L = min([length(x), length(h)]);
+% 计算元素个数， 确保小于L
+[r,c] = size(x);
+nx = r*c;
+if L > nx
+    L = nx;
 end
 
 N1=length(x);
@@ -38,7 +40,7 @@ H=fft(h,L+M-1);
 % 共有S块
 S=N2/L;  
 index=1:L;
-xm=x(index);		% 特殊情况: 第一次迭代
+xm=x(index);		% 第一次迭代
 x1=[zeros(1,M-1) xm];	% 开始位置补零
 X=[];
 figure()

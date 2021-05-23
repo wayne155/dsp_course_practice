@@ -1,4 +1,4 @@
-### TODO
+# TODO
 
 - [x] 测试,完善切比雪夫滤波器
 - [x] 在mainApp中添加IIR, FIR选择逻辑
@@ -15,7 +15,41 @@
 
 
 
-### matlab窗函数法
+**For More information, Please reference to: [this_link](https://github.com/theoYe/dsp_course_practice/blob/dev/%E9%80%9A%E4%BF%A11802%E5%8F%B6%E4%BC%9F%E4%BC%9F-%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A_.pdf)** 
+
+
+
+# 1 系统展示
+
+## 1.1 主界面
+
+![](https://i.bmp.ovh/imgs/2021/05/6612eae26f0bf05f.png)
+
+
+
+
+
+## 1.2 信号处理模块
+
+![](https://i.bmp.ovh/imgs/2021/05/eca9a130c218846c.png)
+
+
+
+**For More information, Please reference to: [this_link](https://github.com/theoYe/dsp_course_practice/blob/dev/%E9%80%9A%E4%BF%A11802%E5%8F%B6%E4%BC%9F%E4%BC%9F-%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A_.pdf)** 
+
+# 2 Signal Processing App Architecture
+
+
+
+**For More information, Please reference to: [this_link](https://github.com/theoYe/dsp_course_practice/blob/dev/%E9%80%9A%E4%BF%A11802%E5%8F%B6%E4%BC%9F%E4%BC%9F-%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A_.pdf)** 
+
+## 2.1 数字信号系统设计
+
+![](https://i.bmp.ovh/imgs/2021/05/0283b44a7ed82b69.png)
+
+# 3 数字信号处理算法
+
+## 3.1 matlab窗函数法
 
 矩形窗: rectwin
 
@@ -29,13 +63,7 @@ kaise
 
 blackman
 
-
-
-
-
-
-
-### conv函数
+## 3.2 conv函数
 
 
 
